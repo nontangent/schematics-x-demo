@@ -5,10 +5,10 @@ import { Component, signal } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-  <div>Profile</div>
+  <div>User</div>
   `,
   styleUrl: './user.page.css'
 })
 export class UserPage {
-  readonly title = signal('This is Profile Page');
+  readonly title = signal('This is User Page');
 }
