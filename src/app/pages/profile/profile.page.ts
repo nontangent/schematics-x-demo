@@ -1,14 +1,13 @@
 import { Component, signal } from '@angular/core';
 
 @Component({
-  selector: 'app-user',
+  selector: 'app-profile',
   standalone: true,
-  imports: [],
   template: `
-  <div>Profile</div>
+    <div>Profile</div>
   `,
-  styleUrl: './user.page.css'
+  styleUrl: './profile.page.css'
 })
-export class UserPage {
+export class ProfilePage {
   readonly title = signal('This is Profile Page');
 }
