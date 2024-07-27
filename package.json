@@ -22,7 +22,7 @@
     "@angular-devkit/build-angular": "^18.0.0",
     "@angular/cli": "^18.0.1",
     "@angular/compiler-cli": "^18.0.0",
-    "schematics-x": "^17.3.4",
+    "schematics-x": "^17.14.0-preview-update-nx-workspace-19.3",
     "typescript": "~5.4.0"
   }
 }

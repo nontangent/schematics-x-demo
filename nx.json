@@ -1,9 +1,27 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "schematicCollections": ["@schematics/angular", "schematics-x"]
   },
   "newProjectRoot": "projects",
+  "generators": {
+    "schematics-x": {
+      "directory": {
+        "specs": [
+          {
+            "name": "projects/@example/api/src/app/routes/application",
+            "schematic": {
+              "collection": "schematics-x",
+              "schematic": "chain",
+              "options": {
+                "instructions": "Generate files within the directory `projects/@example/api/src/app/routes/application`.",
+                "parallel": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
   "projects": {
     "demo": {
       "architect": {
